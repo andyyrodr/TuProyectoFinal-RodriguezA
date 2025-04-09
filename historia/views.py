@@ -31,6 +31,8 @@ def categoria_create(request):
             return redirect("historia:historia_create")
     return render(request, "historia/categoria_form.html", {"form": form})
 
+
+
 class HistoriaListView(ListView):
     model = models.historia
     template_name = "historia/historia_list.html"
@@ -39,10 +41,9 @@ class HistoriaListView(ListView):
     def get_queryset(self):
         busqueda = self.request.GET.get("busqueda")
         if busqueda:
-            queryset = models.historia.objects.filter(nombre__icontains=busqueda)
-        else:
-            queryset = models.historia.objects.all()
-        return queryset
+            return models.historia.objects.filter(nombre__icontains=busqueda)
+        return models.historia.objects.all()
+
 
 
 class HistoriaCreateView(CreateView):
