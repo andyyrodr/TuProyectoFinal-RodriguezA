@@ -44,3 +44,5 @@ la base de datos ya esta comentada, es decir, subida a github
 4. agregar un sitio de consultas a la pagina
 
 5. permitir que los usuarios den like a las historias
+
+6. hacer las pruebas en una rama de prueba, no en un repositorio aparte, como en este caso
