@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <h1>Historia: {{object.nombre}} </h1>
+    <ul>
+        <li class="mb-3">Categoría: {{ object.categoria }}</li>
+
+        <li class="mb-3">Autor: {{ object.autor }}</li>
+
+        <li class="mb-3">Contenido:{{ object.contenido }}</li>
+        
+        <li class="mb-3">Fecha: {{object.fecha}} </li>
+            
+        </li>
+  
+    </u>
+    <a href="http://127.0.0.1:8000/historia/historia/list/" class="btn btn-dark">Volver</a>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Crear Categoría{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="card p-4 shadow rounded-4">
+        <h2 class="mb-4">Nueva categoría</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-success">Crear</button>
+            <a href="{% url 'historia:categoria_list' %}" class="btn btn-secondary ms-2">Cancelar</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

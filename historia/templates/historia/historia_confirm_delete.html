@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Eliminar historia{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="card p-4 shadow rounded-4">
+        <h2 class="mb-4">¿Estás seguro de que querés eliminar esta historia?</h2>
+        <p><strong>{{ object.nombre }}</strong></p>
+
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+            <a href="{% url 'historia_list' %}" class="btn btn-secondary ms-2">Cancelar</a>
+        </form>
+    </div>
+</div>
+{% endblock %}
