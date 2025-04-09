@@ -3,6 +3,8 @@ Python Comisión 75140
 
 Alumno: Andres Rodriguez
 
+Video de exposicion con audio: https://youtu.be/7xWhiNDsiIU
+
 ## De qué se trata el proyecto
 
 Este proyecto consiste en un blog donde cada programador pueden compartir su historia, la cual puede clasificar en categorias. tambien puede leer las historias de las demas y filtrarlas a traves de una barra de busqueda
@@ -46,3 +48,4 @@ la base de datos ya esta comentada, es decir, subida a github
 5. permitir que los usuarios den like a las historias
 
 6. hacer las pruebas en una rama de prueba, no en un repositorio aparte, como en este caso
+
