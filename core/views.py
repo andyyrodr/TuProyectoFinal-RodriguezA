@@ -1,3 +1,13 @@
-from django.shortcuts import render
+from django.db import models
 
-# Create your views here.
+from django.shortcuts import render 
+
+
+
+def index(request):
+    return render(request, "core/index.html")
+
+
+
+def about(request):
+    return render(request, "core/about.html")
